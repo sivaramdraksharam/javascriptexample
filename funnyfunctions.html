@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions in JS</title>
+  </head>
+  <body>
+    <h3>A function in javascript also acts as a value or object</h3>
+    <script>
+      function findAverage() {
+        let a = 5;
+        let b = 3;
+        let c = 8;
+
+        var nums = [a, b, c];
+        
+        let sum = 0;
+        //external for loop
+        for (let i = 0; i < nums.length; i++) {
+          sum += nums[i];
+        }
+
+       // console.log(sum);
+
+        alert("sum:" + sum);
+
+
+
+        
+      }
+
+      findAverage();
+
+      function pow(n,x)
+      {
+
+        if( x == 0)
+            return 1
+        else 
+        {
+            let v = n
+            for(let i = 0; i<x ; i++)
+            {
+               v *= v     
+               x--
+            }
+        return  ;
+        }
+      }
+      let power = pow(3, 4)
+      alert(power)
+
+    </script>
+  </body>
+</html>
