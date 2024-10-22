@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object references</title>
+</head>
+<body>
+    <script>
+    function greet()
+    {//two objects created with string primitive 
+        let message = 'Hello'
+        let phrase = message
+        window.alert(`message ${message}`)
+        phrase = 'Hai'
+        alert(`phras :${phrase}`)
+        alert(`message ${message}`)
+    }
+   // greet()
+
+    function callme()
+    {
+        let trainer = { name : 'Sivaram'}
+        let onlinetrainer = trainer
+        onlinetrainer.name = 'Prasad'
+        alert(`Hello, Mr.${trainer.name}`)
+    }
+    callme()
+    </script>
+</body>
+</html>
